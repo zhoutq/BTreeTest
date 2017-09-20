@@ -169,8 +169,8 @@ int DepthBTree(BTree *bt) {
         return 0;
     }
     
-    // 定义一个max的block函数
-    int (^max)(int , int ) = ^(int a, int b){
+    // 定义一个max的block函数 http://fuckingblocksyntax.com/
+    int (^max)(int , int ) = ^int(int a, int b){
         
         return a > b ? a:b;
     };
